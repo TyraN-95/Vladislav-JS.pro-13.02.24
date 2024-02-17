@@ -1,6 +1,9 @@
-alert('Hello User')
-console.log('this 1');
-let answer1 = prompt('How are you', 'def');
-console.log('this 2', answer1);
-confirm('');
-console.log('this 3');
+let str = prompt(`Введіть перший рядок:`);
+let str1 = prompt(`Введіть перший рядок:`);
+let str2 = prompt(`Введіть перший рядок:`);
+let output = `${str2} ${str} ${str1}`;
+console.log(output);
+
+let num = prompt("Введите пятизначное число: ");
+let digits = num.split('').join(' ');
+console.log(digits);
