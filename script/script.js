@@ -59,10 +59,10 @@ let users = [
     let res = 0
     
     for (let user of users) {
-         let balance = parseFloat(user.balance.replace(/\$|,/g, '')); 
+         let balance = parseFloat(user.balance.replace(/\$|,/g, ''));
+         res += balance; 
         if (balance > 2000) {
             sum.push(user);
-            res += balance;
         }
     }
     
