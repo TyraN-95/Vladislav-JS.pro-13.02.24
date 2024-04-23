@@ -3,3 +3,17 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+.emoji-vote {
+    font-size: 2em;
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px;
+}
+
+.emoji-vote + .vote-count {
+    font-size: 1.2em;
+    /* display: inline-block; */
+    padding: 10px;
+    margin-left: 15px;
+}
