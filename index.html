@@ -4,10 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <script src="./script/script.js"></script>
+    <script src="./script/script.js" defer></script>
     <title>Document</title>
 </head>
 <body>
     <h2>Hello</h2>
+    <div class="container">
+        <div id="categories" class="sidebar">
+            <h2>Категории</h2>
+            <ul>
+                <li onclick="showProducts('Смартфоны')">Смартфоны</li>
+                <li onclick="showProducts('Ноутбуки')">Ноутбуки</li>
+                <li onclick="showProducts('Бытовая техника')">Бытовая техника</li>
+            </ul>
+        </div>
+        <div id="product-list" class="main">
+            <h2>Список товаров</h2>
+        </div>
+        <div id="product-details" class="details">
+            <h2>Информация о товаре</h2>
+        </div>
+    </div>
 </body>
 </html>

@@ -1,5 +1,37 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 20%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.main {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+   
+}
+
+.details {
+    width: 30%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+li {
+    cursor: pointer;
+}
+strong {
+    cursor: pointer;
+}
+button {
+    cursor: pointer;
+}
+h2 {
+    text-align: center;
 }
