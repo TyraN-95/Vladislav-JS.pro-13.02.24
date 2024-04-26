@@ -1,5 +1,39 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+ /* Загальні стилі */
+ body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+}
+
+/* Блок з категоріями */
+.sidebar {
+    width: 20%;
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+.main {
+    flex-grow: 1;
+    padding: 10px;
+    border-left: 1px solid #ccc;
+}
+
+.details {
+    width: 30%;
+    padding: 10px;
+    border-left: 1px solid #ccc;
+}
+
+li {
+    cursor: pointer;
+}
+
+strong {
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
 }
