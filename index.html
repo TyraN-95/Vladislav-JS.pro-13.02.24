@@ -4,10 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <script src="./script/script.js"></script>
+    <script src="./script/script.js" defer></script>
     <title>Document</title>
 </head>
 <body>
     <h2>Hello</h2>
+    <div id="app">
+        <input type="number" id="postId" placeholder="Введите ID поста (1-100)" min="1" max="100">
+        <button id="searchPost">Найти пост</button>
+        <div id="postDetails"></div>
+        <div id="commentsSection"></div>
+      </div>
 </body>
 </html>
