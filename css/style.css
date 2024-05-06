@@ -1,5 +1,89 @@
-* {
+/* * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+} */
+ body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidebar {
+    width: 20%;
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+.main {
+    flex-grow: 1;
+    padding: 10px;
+    border-left: 1px solid #ccc;
+}
+
+.details {
+    width: 30%;
+    padding: 10px;
+    border-left: 1px solid #ccc;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    cursor: pointer;
+    padding: 5px;
+}
+
+li:hover {
+    background-color: #ddd;
+}
+
+button {
+    cursor: pointer;
+}
+
+.order-list {
+    border-top: 1px solid #ccc;
+    padding: 10px;
+}
+.order-item {
+    cursor: pointer;
+    padding-bottom: 10px;
+    border: 1px solid black;
+}
+
+.order-list .order-item {
+    cursor: pointer;
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+.order-list .order-item:hover {
+    background-color: #f0f0f0;
+}
+
+.order-list .delete-button {
+    background-color: red;
+    color: white;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+}
+#my-orders { 
+    margin-right: 10px;
+}
+
+strong {
+    cursor: pointer;
+}
+
+.back {
+    display: flex;
+    margin-top: 20px;
 }

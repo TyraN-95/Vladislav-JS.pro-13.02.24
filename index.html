@@ -4,10 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <script src="./script/script.js"></script>
+    <script src="./script/script.js" defer></script>
+    <script src="./script/product.js" defer></script>
+    <script src="./script/orderDetails.js" defer></script>
     <title>Document</title>
 </head>
 <body>
     <h2>Hello</h2>
+    
+    <div class="container">
+        <div id="categories" class="sidebar">
+            <h2>Категории</h2>
+            <ul>
+                <li onclick="showProducts('Смартфоны')">Смартфоны</li>
+                <li onclick="showProducts('Ноутбуки')">Ноутбуки</li>
+                <li onclick="showProducts('Бытовая техника')">Бытовая техника</li>
+            </ul>
+        </div>
+    
+        <div id="product-list" class="main">
+            <h2>Список товаров</h2>
+        </div>
+    
+        <div id="product-details" class="details">
+            <h2>Информация о товаре</h2>
+        </div>
+    
+        <div id="order-form" class="details" style="display: none;">
+            <h2>Оформление заказа</h2>
+            <form>
+                <label for="fullname">ФИО покупателя:</label>
+                <input type="text" id="fullname" required><br><br>
+                <label for="city">Город:</label>
+                <select id="city" required>
+                    <option value="">Выберите город</option>
+                    <option value="Киев">Киев</option>
+                    <option value="Харков">Харков</option>
+                    <option value="Львов">Львов</option>
+                </select><br><br>
+                <label for="delivery">Склад Новой почты:</label>
+                <input type="text" id="delivery" required><br><br>
+                <label for="payment">Оплата:</label>
+                <select id="payment" required>
+                    <option value="">Выберите метод оплаты</option>
+                    <option value="Наложенный платеж">Наложенный платеж</option>
+                    <option value="Банковская карта">Банковская карта</option>
+                </select><br><br>
+                <label for="quantity">Количество товара:</label>
+                <input type="number" id="quantity" min="1" required><br><br>
+                <label for="comment">Коментарий к заказу:</label><br>
+                <textarea id="comment"></textarea><br><br>
+                <button type="button" onclick="submitOrder()">Подтвердить заказ</button>
+                <button type="button" onclick="cancelOrder()">Отменить</button>
+            </form>
+        </div>
+    
+        <div id="order-list" class="details" style="display: none;">
+            <h2>Мои заказы</h2>
+            <div id="saved-orders">
+            </div>
+        </div>
+    </div>
+   <div class="back">
+    <button onclick="showOrders()" id="my-orders">Мои заказы</button>
+    <div id="back-button" style="display: none;">
+        <button onclick="showCategories()">← Назад</button>
+    </div>
+   </div>
 </body>
 </html>
