@@ -1,5 +1,13 @@
-* {
+/* * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+} */
+
+.weather {
+    font-family: Arial, sans-serif;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
 }
