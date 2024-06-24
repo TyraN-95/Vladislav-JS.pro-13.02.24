@@ -1,10 +1,8 @@
-// src/Form.js
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 
-// Создание схемы валидации с помощью Yup
 const schema = yup.object().shape({
   name: yup.string().required('Имя обязательно для заполнения'),
   email: yup.string().email('Введите корректный email').required('Email обязателен для заполнения'),
